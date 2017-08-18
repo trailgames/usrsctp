@@ -239,6 +239,6 @@ endif ()
 
 add_subdirectory(usrsctplib)
 
-if (BUILD_PROGRAMS)
-    add_subdirectory(programs)
-endif ()
+#if (BUILD_PROGRAMS)
+#    add_subdirectory(programs)
+#endif ()

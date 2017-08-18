@@ -163,10 +163,10 @@ endif ()
 #################################################
 
 set (CMAKE_REQUIRED_INCLUDES "${CMAKE_SOURCE_DIR}/usrsctplib")
-check_include_file(usrsctp.h HAVE_USRSCTP_H)
-if (NOT HAVE_USRSCTP_H)
-    message(FATAL_ERROR "usrsctp.h not found")
-endif ()
+#check_include_file(usrsctp.h HAVE_USRSCTP_H)
+#if (NOT HAVE_USRSCTP_H)
+#    message(FATAL_ERROR "usrsctp.h not found")
+#endif ()
 
 check_struct_has_member("struct sockaddr" "sa_len" "sys/types.h;sys/socket.h" HAVE_SA_LEN)
 if (HAVE_SA_LEN)

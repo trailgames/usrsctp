@@ -199,7 +199,7 @@ endif ()
 
 # SETTINGS FOR UNIX COMPILER
 if ("x${CMAKE_C_COMPILER_ID}" STREQUAL "xClang" OR "x${CMAKE_C_COMPILER_ID}" STREQUAL "xGNU")
-    set(CMAKE_C_FLAGS   "${CMAKE_C_FLAGS}   -std=c99 -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Winit-self -Wno-unused-function -Wno-unused-parameter -Wno-missing-field-initializers -Wno-address-of-packed-member -Wno-unknown-pragmas")
+    set(CMAKE_C_FLAGS   "${CMAKE_C_FLAGS}   -std=c99 -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Winit-self -Wno-unused-function -Wno-unused-parameter -Wno-missing-field-initializers -Wno-address-of-packed-member -Wno-unknown-pragmas -Wno-sign-compare")
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -std=c99 -pedantic -Wall -Wextra -Wfloat-equal -Wshadow -Wpointer-arith -Winit-self -Wno-unused-function -Wno-unused-parameter")
 
     if (WERROR)

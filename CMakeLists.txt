@@ -107,7 +107,7 @@ if (SCTP_KAME)
     add_definitions(-DSCTP_KAME)
 endif ()
 
-option(WERROR "Warning as error" 1)
+option(WERROR "Warning as error" 0)
 
 option(LINK_PROGRAMS_STATIC "Link example programs static" 0)
 
